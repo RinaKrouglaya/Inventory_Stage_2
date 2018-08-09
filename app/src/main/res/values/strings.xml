@@ -2,7 +2,6 @@
     <string name="app_name">Inventory</string>
 
 
-
     <!-- Label for overflow menu option that inserts fake pet data into the app [CHAR LIMIT=20] -->
     <string name="get_info">Read Info About Our Store</string>
 
@@ -12,8 +11,7 @@
     <!-- Label for overflow menu option that deletes all pet data in the app [CHAR LIMIT=20] -->
     <string name="action_delete_all_entries">Delete All Products</string>
 
-    <!-- Title for the activity to add a new pet [CHAR LIMIT=20] -->
-    <string name="editor_activity_title_new_product">Add a Product</string>
+    <!-- Editor activity-->
 
     <!-- Label for editor menu option to save pet and leave editor [CHAR LIMIT=20] -->
     <string name="action_save">Save</string>
@@ -21,8 +19,14 @@
     <!-- Label for editor overflow menu option that deletes the current pet [CHAR LIMIT=20] -->
     <string name="action_delete">Delete</string>
 
-    <!-- Label for overview category of attributes in the editor [CHAR LIMIT=30] -->
-    <string name="category_overview">Overview</string>
+    <!-- Label for product name category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_product_name">Product</string>
+
+    <!-- Label for Supplier Name category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_supplier_name">Supplier</string>
+
+    <!-- Label for Supplier Phone Number category of attributes in the editor [CHAR LIMIT=30] -->
+    <string name="category_contact">Supplier \nPhone \nNumber</string>
 
     <!-- Label for quantity information in the editor [CHAR LIMIT=30] -->
     <string name="hint_quantity">Quantity</string>
@@ -37,17 +41,134 @@
     <string name="hint_supplier_name">Supplier Name</string>
 
     <!-- Text hint for breed field in the editor [CHAR LIMIT=30] -->
-    <string name="hint_contact">Supplier Phone</string>
+    <string name="hint_contact">Supplier Phone Number</string>
 
     <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
     <string name="hint_price">Price</string>
 
-    <!-- Units for weight of the pet (kilograms) [CHAR LIMIT=5] -->
+    <!-- Units for price $ [CHAR LIMIT=5] -->
     <string name="price_currency">$</string>
 
+    <!-- Units for quantity [CHAR LIMIT=5] -->
+    <string name="quantity_units">pcs</string>
+
+    <!-- EditorActivity increase button -->
+    <string name="plus">plus</string>
+
+    <!-- EditorActivity decrease button -->
+    <string name="minus">minus</string>
+
+    <!-- Catalog activity-->
+
+    <!-- Catalog activity, Product Title [CHAR LIMIT=20] -->
+    <string name="product_title">"Name of the product: "</string>
+
+    <!-- Catalog activity, Price Title [CHAR LIMIT=20] -->
+    <string name="price_title">"Price: "</string>
+
+    <!-- Catalog activity, Quantity Title [CHAR LIMIT=20] -->
+    <string name="quantity_title">"Quantity available: "</string>
+
     <!-- Toast: Error message when inserting a new product -->
-    <string name="error_insert_product">Error with inserting a new product</string>
+    <string name="error_insert_product">Error when inserting a new product</string>
 
     <!-- Toast: Success message when inserting a new product -->
-    <string name="success_insert_product">Success. A new product inserted with row ID: </string>
+    <string name="success_insert_product">Success. New product added. </string>
+
+
+    <!-- Title text for the empty view, describes the empty storage  image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">No products in the inventory at the moment.</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add products [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding some products</string>
+
+
+    <!-- Hint for the edit text field product name in the editor activity-->
+    <string name="hint_for_product_name_editor">Product Name</string>
+
+    <!-- Hint for the edit text field price in the editor activity -->
+    <string name="hint_for_the_price_editor_field">Please fill in a price, a number above or = 0</string>
+
+
+    <!-- Label for the quantity in the detail overview -->
+    <string name="quantity_text_view_info">Select Quantity</string>
+
+    <!-- Label for the Supplier name overview-->
+    <string name="supplier_name_info">Supplier Name</string>
+
+    <!-- Hint for the supplier Name-->
+    <string name="hint_for_supplier_name">Please fill in a Supplier Name</string>
+
+    <!-- Label for the supplier phone Number-->
+    <string name="supplier_phone_number">Supplier Phone Number</string>
+
+    <!-- HInt for the supplier phone Number -->
+    <string name="hint_for_the_supplier_phone_number">Supplier phone number</string>
+
+    <!-- Title for the editor activity to insert a new product -->
+    <string name="editor_activity_title_new_product">Add a New Product</string>
+
+    <!-- Title for the editor activity to edit an existing product-->
+    <string name="editor_activity_title_edit_existing_product">Edit The Product</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog button text for the option to discard a users changes -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current product-->
+    <string name="keep_editing">Keep editing</string>
+
+
+    <!-- Toast message in editor when new product product has failed to be inserted-->
+    <string name="editor_insert_product_failed">Error saving a new product</string>
+
+    <!-- Toast message in editor when new product product has been successfully inserted -->
+    <string name="editor_insert_product_successful"> Product saved</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current pet -->
+    <string name="delete_dialog_msg">Delete this product?</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current pet -->
+    <string name="delete">Delete</string>
+
+
+    <!-- Toast message in editor when the current product product has failed to be deleted -->
+    <string name="editor_delete_product_failed">Error when deleting product</string>
+
+    <!-- Toast message in editor when the current product was successfully deleted -->
+    <string name="editor_delete_product_successful">Product deleted</string>
+
+
+    <!-- Dialog button text for the option to cancel deletion of the current product product -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Toast when there is nothing filled in -->
+    <string name="editor_fill_in">Please fill in the blank fields</string>
+
+    <!-- Toast when quantity edit text is left empty -->
+    <string name="editor_quantity_field_cannot_be_empty">Please select quantity</string>
+
+    <!-- Toast when quantity can't be less than 0-->
+    <string name="editor_quantity_cannot_be_less_than_0">Quantity cannot be less than 0</string>
+
+    <!-- Toast when the product is out of stock(quantity =0)-->
+    <string name="sale_button_out_of_stock">This product is out of stock</string>
+
+    <!-- Question when the name of the product is empty -->
+    <string name="editor_question_empty_field_name">What is the name of the product?</string>
+
+    <!-- Question when the price of the product is empty -->
+    <string name="editor_question_empty_field_price">What is the price of the product?</string>
+
+    <!-- Question for when the quantity for the product is empty -->
+    <string name="editor_question_empty_field_quantity">What is the quantity?</string>
+
+    <!-- Question for when the supplier name field is empty -->
+    <string name="editor_question_empty_field_supplier_name">What is the name of the supplier?</string>
+
+    <!-- Question for when the supplier phone number field is empty -->
+    <string name="editor_question_empty_field_contact">What is the phone number of the supplier?</string>
+
 </resources>

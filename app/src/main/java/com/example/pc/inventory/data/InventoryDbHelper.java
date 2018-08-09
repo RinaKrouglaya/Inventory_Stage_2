@@ -25,27 +25,12 @@ public class InventoryDbHelper extends SQLiteOpenHelper {
     private static InventoryDbHelper mInstance = null;
 
     /**
-     * Constructs a new instance of {@link InventoryDbHelper}.
-     * Constructor should be private to prevent direct instantiation.
-     * make call to static factory method "getInstance()" instead.
-     *
+     * Constructs a new instance of {@link InventoryDbHelper}.*
      * @param context of the app
      */
-    private InventoryDbHelper(Context context) {
+   public InventoryDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
-
-    public static InventoryDbHelper getInstance(Context ctx) {
-
-        // Use the application context, which will ensure that you
-        // don't accidentally leak an Activity's context.
-
-        if (mInstance == null) {
-            mInstance = new InventoryDbHelper(ctx.getApplicationContext());
-        }
-        return mInstance;
-    }
-
     /**
      * This is called when the database is created for the first time.
      */

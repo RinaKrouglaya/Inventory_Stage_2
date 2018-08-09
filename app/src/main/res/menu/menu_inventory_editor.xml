@@ -4,7 +4,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".EditorActivity">
+    tools:context=".InventoryEditorActivity">
 
     <item
         android:id="@+id/action_save"
@@ -12,5 +12,8 @@
         android:title="@string/action_save"
         app:showAsAction="always" />
 
-
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/action_delete"
+        app:showAsAction="never"/>
 </menu>

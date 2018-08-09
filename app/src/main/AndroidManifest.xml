@@ -19,7 +19,6 @@
 
         <activity
             android:name=".InventoryEditorActivity"
-            android:label="@string/editor_activity_title_new_product"
             android:parentActivityName=".InventoryCatalogActivity"
             android:theme="@style/EditorTheme">
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -27,6 +26,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".InventoryCatalogActivity" />
         </activity>
-    </application>
 
-</manifest>
+        <provider
+            android:name=".data.InventoryProvider"
+            android:authorities="com.example.pc.inventory"
+            android:exported="false" />
+    </application>
+  </manifest>

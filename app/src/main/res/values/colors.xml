@@ -9,9 +9,19 @@
     <!-- Accent color for UI controls like checkboxes and text fields -->
     <color name="colorAccent">#4FC3F7</color>
 
-    <!-- Primary color for the editor -->
+    <!-- Primary color for the Editor -->
     <color name="editorColorPrimary">#2D3640</color>
 
-    <!-- Primary dark color for the editor -->
+    <!-- Primary dark color for the Editor -->
     <color name="editorColorPrimaryDark">#394450</color>
+
+    <!-- Category color for the Editor -->
+    <color name="editorCategoryColor">#00BFA5</color>
+
+    <!-- Category color for the Catalog -->
+    <color name="catalogCategoryColor">#004D40</color>
+
+    <!-- Small Text color for the Catalog -->
+    <color name="catalogSmallTextColor">#A2AAB0</color>
+
 </resources>

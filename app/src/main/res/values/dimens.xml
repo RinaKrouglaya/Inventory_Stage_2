@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <!-- Margin around the floating action button in CatalogActivity -->
     <dimen name="fab_margin">16dp</dimen>
 
@@ -10,6 +9,21 @@
 
     <!-- Button dimension in the info dialog -->
     <dimen name="button_dim">30dp</dimen>
+
+    <!-- Window dimension in the info dialog -->
+    <dimen name="dialog_dimension">200dp</dimen>
+
+    <!-- Editor: EditTExt marginTop -->
+    <dimen name="editor_gap">20dp</dimen>
+
+    <!-- Editor: Quantity Container height -->
+    <dimen name="editor_container_height">100dp</dimen>
+
+    <!-- Editor: Quantity Container gap -->
+    <dimen name="editor_container_gap">50dp</dimen>
+
+    <!-- General -->
+    <dimen name="small_padding">16dp</dimen>
 
 
 </resources>

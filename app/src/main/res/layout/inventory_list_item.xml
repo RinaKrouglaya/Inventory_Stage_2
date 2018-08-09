@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="@dimen/small_padding">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/product_title"
+                android:textAppearance="?android:textAppearanceMedium"
+                tools:text="Product Name: " />
+
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/product_title"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"
+                tools:text="Product 1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/price_title"
+                style="@style/CatalogUnitsStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:text="@string/price_title"
+                tools:text="Price: " />
+
+            <TextView
+                android:id="@+id/price"
+                style="@style/CatalogUnitsStyle"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/price_title"
+                android:layout_toRightOf="@id/price_title"
+                tools:text="12" />
+
+            <!-- Currency of the price ($) -->
+            <TextView
+                android:id="@+id/price_currency"
+                style="@style/CatalogUnitsStyle"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/price"
+                android:text="@string/price_currency" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/quantity_title"
+                style="@style/CatalogUnitsStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="@string/quantity_title"
+                tools:text="Quantity available:  " />
+
+            <TextView
+                android:id="@+id/quantity"
+                style="@style/CatalogUnitsStyle"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/quantity_title"
+                android:layout_toRightOf="@id/quantity_title"
+                tools:text="200" />
+
+            <!-- Currency of the price ($) -->
+            <TextView
+                android:id="@+id/pcs"
+                style="@style/CatalogUnitsStyle"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/quantity"
+                android:text="@string/quantity_units" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/sale_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sale"
+       android:layout_gravity="bottom"/>
+
+</LinearLayout>
