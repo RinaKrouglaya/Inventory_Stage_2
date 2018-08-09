@@ -170,6 +170,30 @@ public class InventoryEditorActivity extends AppCompatActivity
                 }
 
         });
+
+        //Setting up the phone button to call the supplier
+        final ImageButton mPhoneCallSupplierButton = findViewById(R.id.call_supplier_phone_button);
+        if (mCurrentProductUri==null){
+            //Hide button if we don't have a phone number in the database yet
+            mPhoneCallSupplierButton.setVisibility(View.GONE);
+        }else {
+            //Show the button as we if we do have a phone number in the database
+            mPhoneCallSupplierButton.setVisibility(View.VISIBLE);
+        }
+
+        mPhoneCallSupplierButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String phoneNumber = mContactEditText.getText().toString().trim();
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:"+phoneNumber));
+                if (intent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+
+                }
+            }
+
+        });
     }
 
     @Override

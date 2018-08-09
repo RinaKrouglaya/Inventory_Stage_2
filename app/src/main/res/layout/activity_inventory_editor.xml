@@ -67,6 +67,15 @@
             android:hint="@string/hint_contact"
             android:inputType="phone" />
 
+        <ImageButton
+            android:id="@+id/call_supplier_phone_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/edit_contact"
+            android:layout_below="@id/edit_contact"
+            android:layout_marginLeft="0dp"
+            android:src="@drawable/phone" />
+
         <TextView
             android:id="@+id/category_price"
             style="@style/CategoryStyle"
@@ -79,7 +88,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/edit_contact"
-            android:layout_below="@id/edit_contact"
+            android:layout_below="@id/call_supplier_phone_button"
             android:layout_marginTop="@dimen/editor_gap"
             android:hint="@string/hint_price"
             android:inputType="number" />
