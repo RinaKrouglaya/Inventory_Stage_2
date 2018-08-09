@@ -73,7 +73,6 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@id/edit_contact"
             android:layout_below="@id/edit_contact"
-            android:layout_marginLeft="0dp"
             android:src="@drawable/phone" />
 
         <TextView
